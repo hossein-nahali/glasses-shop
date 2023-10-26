@@ -1,0 +1,155 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: Dana;
+        src: url('./../fonts/Dana/dana-thin.eot');
+        src: url('./../fonts/Dana/dana-thin.eot?#iefix') format('embedded-opentype'),
+        url('./../fonts/Dana/dana-thin.woff') format('woff'),
+        url('./../fonts/Dana/dana-thin.ttf') format('truetype');
+        font-weight: 100;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: Dana;
+        src: url('./../fonts/Dana/dana-extralight.eot');
+        src: url('./../fonts/Dana/dana-extralight.eot?#iefix') format('embedded-opentype'),
+        url('./../fonts/Dana/dana-extralight.woff') format('woff'),
+        url('./../fonts/Dana/dana-extralight.ttf') format('truetype');
+        font-weight: 200;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: Dana;
+        src: url('./../fonts/Dana/dana-light.eot');
+        src: url('./../fonts/Dana/dana-light.eot?#iefix') format('embedded-opentype'),
+        url('./../fonts/Dana/dana-light.woff') format('woff'),
+        url('./../fonts/Dana/dana-light.ttf') format('truetype');
+        font-weight: 300;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: Dana;
+        src: url('./../fonts/Dana/dana-regular.eot');
+        src: url('./../fonts/Dana/dana-regular.eot?#iefix') format('embedded-opentype'),
+        url('./../fonts/Dana/dana-regular.woff') format('woff'),
+        url('./../fonts/Dana/dana-regular.ttf') format('truetype');
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: Dana;
+        src: url('./../fonts/Dana/dana-medium.eot');
+        src: url('./../fonts/Dana/dana-medium.eot?#iefix') format('embedded-opentype'),
+        url('./../fonts/Dana/dana-medium.woff') format('woff'),
+        url('./../fonts/Dana/dana-medium.ttf') format('truetype');
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: Dana;
+        src: url('./../fonts/Dana/dana-demibold.eot');
+        src: url('./../fonts/Dana/dana-demibold.eot?#iefix') format('embedded-opentype'),
+        url('./../fonts/Dana/dana-demibold.woff') format('woff'),
+        url('./../fonts/Dana/dana-demibold.ttf') format('truetype');
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: Dana;
+        src: url('./../fonts/Dana/dana-bold.eot');
+        src: url('./../fonts/Dana/dana-bold.eot?#iefix') format('embedded-opentype'),
+        url('./../fonts/Dana/dana-bold.woff') format('woff'),
+        url('./../fonts/Dana/dana-bold.ttf') format('truetype');
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: Dana;
+        src: url('./../fonts/Dana/dana-extrabold.eot');
+        src: url('./../fonts/Dana/dana-extrabold.eot?#iefix') format('embedded-opentype'),
+        url('./../fonts/Dana/dana-extrabold.woff') format('woff'),
+        url('./../fonts/Dana/dana-extrabold.ttf') format('truetype');
+        font-weight: 800;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: Dana;
+        src: url('./../fonts/Dana/dana-black.eot');
+        src: url('./../fonts/Dana/dana-black.eot?#iefix') format('embedded-opentype'),
+        url('./../fonts/Dana/dana-black.woff') format('woff'),
+        url('./../fonts/Dana/dana-black.ttf') format('truetype');
+        font-weight: 900;
+        font-style: normal;
+    }
+
+
+    body {
+        font-feature-settings: "ss01", "tnum";
+        @apply font-Dana bg-zinc-50
+    }
+
+    .header-rounded:after {
+        content: "";
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        aspect-ratio: 1;
+        background-image: radial-gradient(circle at 100% 100%, #FCC546 50px, #fff calc(50px + 1px));
+        rotate: 180deg;
+        bottom: 50%;
+        right: 0;
+        z-index: 10;
+
+    }
+
+    .dark .header-rounded:after {
+        content: "";
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        aspect-ratio: 1;
+        background-image: radial-gradient(circle at 100% 100%, #FCC546 50px, #27272a calc(50px + 1px));
+        rotate: 180deg;
+        bottom: 50%;
+        right: 0;
+        z-index: 10;
+
+    }
+
+    .header-rounded-2:before {
+        content: "";
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        aspect-ratio: 1;
+        background-image: radial-gradient(circle at 100% 100%, #FCC546 50px, #fff calc(50px + 1px));
+        rotate: 180deg;
+        bottom: 0;
+        right: 0;
+        z-index: 10;
+    }
+
+    .dark .header-rounded-2:before {
+        content: "";
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        aspect-ratio: 1;
+        background-image: radial-gradient(circle at 100% 100%, #FCC546 50px, #27272a calc(50px + 1px));
+        rotate: 180deg;
+        bottom: 0;
+        right: 0;
+        z-index: 10;
+    }
+}
