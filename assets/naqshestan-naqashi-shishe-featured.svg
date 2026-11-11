@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="t">
+  <title id="t">نقاشی شیشه ای — مقایسه بلور و نقاشی</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#140e0a"/>
+      <stop offset="100%" stop-color="#3b291c"/>
+    </linearGradient>
+    <linearGradient id="crystal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f0f4ff"/>
+      <stop offset="100%" stop-color="#8ca4c4"/>
+    </linearGradient>
+    <linearGradient id="painted" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1aa3b5"/>
+      <stop offset="50%" stop-color="#c41e3a"/>
+      <stop offset="100%" stop-color="#c9a227"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="60" y="60" width="1480" height="780" fill="none" stroke="#e8dcc4" stroke-width="5" rx="16"/>
+  <path d="M60 60 Q70 30 100 20 L1500 20 Q1530 30 1540 60" fill="none" stroke="#e8dcc4" stroke-width="3" opacity="0.7"/>
+  <text x="800" y="140" text-anchor="middle" font-family="Georgia, serif" font-size="52" fill="#f5ecd8">نقاشی شیشه ای</text>
+  <text x="800" y="200" text-anchor="middle" font-family="Georgia, serif" font-size="28" fill="#d4c4a8" opacity="0.9">بلور در برابر نقاشی شیشه</text>
+  <g transform="translate(220,250)">
+    <ellipse cx="200" cy="470" rx="210" ry="28" fill="#000" opacity="0.35"/>
+    <path d="M120 120 L280 120 L310 360 L90 360 Z" fill="url(#crystal)" opacity="0.85"/>
+    <path d="M130 130 L270 130 L295 345 L105 345 Z" fill="#ffffff" opacity="0.15"/>
+    <rect x="175" y="360" width="50" height="90" fill="url(#crystal)"/>
+    <polygon points="150,450 120,470 280,470 250,450" fill="#6a7f9a"/>
+  </g>
+  <g transform="translate(860,250)">
+    <ellipse cx="200" cy="470" rx="210" ry="28" fill="#000" opacity="0.35"/>
+    <rect x="70" y="100" width="260" height="280" rx="28" fill="#fff" opacity="0.2"/>
+    <rect x="80" y="110" width="240" height="260" rx="24" fill="url(#painted)" opacity="0.85"/>
+    <circle cx="200" cy="230" r="55" fill="#c41e3a" opacity="0.9"/>
+    <circle cx="200" cy="230" r="18" fill="#f4d03f"/>
+    <path d="M160 200 Q200 150 240 200 Q200 260 160 200" fill="#1aa3b5" opacity="0.8"/>
+    <rect x="185" y="380" width="30" height="80" fill="#c9a227"/>
+    <ellipse cx="200" cy="470" rx="90" ry="16" fill="#8b6914"/>
+  </g>
+  <text x="420" y="760" text-anchor="middle" font-size="26" fill="#e8dcc4">بلور</text>
+  <text x="1060" y="760" text-anchor="middle" font-size="26" fill="#e8dcc4">نقاشی شیشه</text>
+</svg>
